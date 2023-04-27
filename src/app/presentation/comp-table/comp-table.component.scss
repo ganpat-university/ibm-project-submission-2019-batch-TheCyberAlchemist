@@ -1,0 +1,39 @@
+@import "../../../assets/scss/paper-dashboard/variables";
+
+/* Style the table */
+#table {
+	border-collapse: collapse;
+	margin: 20px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	align-items: center;
+	width: 100%;
+	th {
+		text-align: center;
+		padding: 10px;
+	}
+	/* Style the first column */
+	td:first-child {
+		font-weight: bold;
+		padding: 10px;
+	}
+
+	/* Style the checkboxes */
+	input[type="checkbox"] {
+		margin-left: 10px;
+	}
+	// set text align to center for all but the first column
+	td:not(:first-child) {
+		text-align: center;
+	}
+	td,th{
+		border: 1px solid rgba(233, 223, 223, 0.2);
+		padding: 10px;
+	}
+}
+.checkbox {
+	margin-left: 20px;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+}

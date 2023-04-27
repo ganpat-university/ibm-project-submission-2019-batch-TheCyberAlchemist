@@ -1,0 +1,74 @@
+@import "../scss/paper-dashboard/variables";
+
+.my-form-class {
+	.card,
+	.accordion-item {
+		background-color: $vscode-black  !important;
+	}
+	.form-control {
+		background-color: $vscode-black  !important;
+		color: #fff !important;
+		
+		// &:focus {
+		// 	// outline: none !important;
+		// 	border: 2px solid $danger-color  !important;
+		// 	// border-color: $danger-color  !important;
+		// }
+	}
+	.mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-disabled.mat-checkbox-indeterminate .mat-checkbox-background{
+		background-color: $orange-color  !important;
+	}
+}
+.mat-datepicker-content{
+	background-color: $vscode-bg  !important;
+	// .mat-calendar-body-cell-content{
+	// 	background-color: red  !important;
+	// }
+}
+.mat-input-element:disabled, .mat-form-field-type-mat-native-select.mat-form-field-disabled .mat-form-field-infix::after{
+	color: #fff !important;
+}
+
+.errors_container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	color: $color-red-error;
+	// font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mat-form-field{
+	width: 100%;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: $orange-color  !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+// .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+// 	color: white !important;
+//   }

@@ -1,0 +1,216 @@
+<!-- show image with a link -->
+
+<div class="row">
+	<div class="col-2">
+		<div class="profile_img">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAABLFBMVEX///8AAAAoJyYrKin8/PwYFxUmJSQaGBcgHx729vYjIiETEQ8QDgzz8/MWFBP5+flHRkU7OjnFxcXZ2dhNTEysrKvl5eW3t7fr6+uVlJTb29uampnT09MdHBqMi4sLCAV7e3q+vr6AgIBra2qjoqIxMC9APz5hYWBTUlFzcnL+yQDLy8tbWlqxsLCHh4dmZWXP5PK20OhspdgGf79enMn///eq1Lp/vZNesnd8vomk0Kvk9eepx+cAaLNEkMnu8NT/8aLI4dEAmUiOzKhzx5gAhyMJeL7z68b/4G6k2rzzusHrqK7/6u9Ap1phmd3/8YbGAADQPEvVXWgqpWLN3vjHABt5p+PvmaSLsNv/9ardgYmwz+3//8vB4srf7fj//9n+7rf+2Vj+0z3+4opI/t7MAAAOFElEQVR4nO2aCbfbNnbHAe47RYqruICUSC2mRCWdJp00cWeSaZNMnHaSTJdZ2lky3/879AKg9PRs+XmJE1tz8DvHfhQBApd/4l5cgERIIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAguGV81/Tftg03yHvv/8PP/vF99MHbtuOm+PCffv7RP3/8yeN/+cUv37Ypt8Onn/3qww//9bN/++i9zz//4su3bc2t8OGv0VdPnjz5+tef/ft7j//jN3972/bcBh9//NU333z73bfffGf+9qNPHv/nIxHfXoon//UV+/vVd+5vP/38v39z2266bFr6R8mb9NUvLvMCqOdXCxfLxcWvr789ZR7u/3z68989/v2jV+/uHcLwtgr8SbCze/WLD3gG9O3VwhRfPog/fH0+9M2P/vj4fx998er9vTOYkkTooMh1a/PqV6c4833fVK4WKtnFeeXJZdH//enxnx/95dX7e2dIDLlaguOsNWkGP/3ykFKXc8sFmsdtBofKPD2UrO7icEjMMqHFQxzSMpCNN+OXJirbkumUhGFGf7ulC+ddNG9LH/lfwzE9YCgujLa//MS3+iYpvdWsd1GLG7mHO15jjEkOp/G+gyM5Q9keTuEGqsY2xuoGj1BKqwUllc3lzSxwesQEUz+PPaJJDZ5Dmy2a47SB80daZe1s8XaS+U8/+/1NO2lIxhhi0KoaPJANrfNF2+MSzUlvjXHgFAhtxvkwYwroxbzWqxplvXVIDk5PZYvTNF7Q0BjskqzBMEYxHISGtUAhDtFCC1aLpMYD8o19hpJ+CqDvf/LlTU8JKR4TY5Xpe1OVTfAe5PoN6UA2A+J8jJe0jmnmZET0H0JHu0YdbnzX3ZMBpU7fy2pMZdtC4YAPqLbpgKq9STaLTjgZnI9xYrpKMXn17/xHf317N/3DSXGNjn2OW1+2IGqlKwtXegFjZsYKGxiPOxmrRoMaNjHGUH9lWODADmiR4sTNMp/KRgtLOLWPTFrNmWRTweOZbLW+luVe5rK57//ypn0URk6OBkdfu/6sKuFX3w07h8oWIZpfNKCMVAyjvURLuHeECiqbtxxCILmbEhJMkxAq23FNw113ks3r0CQbLgcgZJOC/8Gj2852R1IgJYI4r2ycEOk0GdnYp9FGZYtICDkxyNaRNTjxWq1hxB2nq6/IFmM67Tb607LF+DIp/v77215bHQlEpsUAjrWDOw/0Oqtt/VK2jdcknW0skd97/djTKcENnGOaNjaVbZFRLmRz+z6d59h6Wja/6uGRtNRn0Qfff3nbqiH5nMpTJywhsahq8MMSB4gGshVKCMSxGg5QtsV4VZAaxlZAk5LIBV0ZESQgVLYBdzTRgBMdTAk8AYG5GGSD84lGq+4U9Iu/fX/TcY0yhFPmhRYQq5Abx6YJB25IXS0LwbH8Q5wp4Wl5SZ2aXhbTtANlA2OBTJYZ8/+R6aLOgzZaF9G2oAn2PwrjGMo/+OLGR9orUoa+klo4eUE1GvPNKPgpLLoJ9riqMHW3h9n2zarC5U9h0U1Q5rvdc/aILhnq1S7PfgJ7BAKBQCB4+9T1eH4RUC7r5unychzj1297eZnjHcYRVrfJWOd0g+qpwqvMx3o8JePJ8iUu+AGUXQx0hwXffy6KxUO1c+LtTzv+S+Jtny5PX+vNDMfW72VvI6ELrdJRA5BCkXmh6brP/5QmxdU5TcxJhV/j1dpL02GPAA6OmM0YPzha5rZ8fh0gSd4zhqWe0byuJZJELmVbYirb3NJmVDbN4zsl5IH8udNl6/RQdYlth/5oxF6/Oh6PkWYwo1X74WfUS3rBjwYi42eK36Bs87BNzrKhMGzpn2XlPV+2pSHLhOfXrSPLVfG6lrwEsb1mf8vAouvCF8nW6dZGmYw0nvXHNygb5yTbxGjozx9DR0uWp+5XcFjlr2vJSxDbgckOWlsfXixbUk1easqSByE77LqB/lQOXZecZXO7Du4u3sxWh+k6Jd7NtnwN5UIsNVG4pMOmLDazTcHdnr6BdYttNHLxoOXyzklj2nwW7iyjHlo3ZO0DWRd358g/0/pe6mljGZZ7uap5Feg5orMLMNA2kzo69XGvf+hyGW3zJOu69mzzvmDNK13XKZPN92UzMQ1VXLZFfOCRt4y5im29W8asXqRxLw2JZMGfGtM3ehDpZg7dQptkSzC0KtuWZpE9t9f2dLXSWeDMZCdwG0yWdB9ONwxLZdvnIJuaqqqlVbzF+7FNsvGAWkzHk43LFqv84aXY7s+DsZekQrdpW7lu5BZzBnOJPeiiohuAzNpDiytNM9h8sQhwxfrn32ccsaFZejXy95Xg6J7ugc1MKuw5ZoOd5lnZyJ1sMQ64MQVeg0uaM0w3H1lXqce9dGno1Anyij9Uf6vp4Z1strTe6w4mkkzobQxY8qL8CNEQhmYWWNvYsUC2DKa7IPIsyUiYbHKlOxKxZLZHV1d6dydbIDkliER9j+AQrSWd3c3eqsbTnSAZ6gQWPCell7zE5tPD0SPWVlZl0jFrrZ2lY+xBEKRmajr0b1sSewaNJ1d276iWbNAXcKEtOdt840gOdSdVmnVg8zksnWUrCXU6LtvBmfGTnR1B3ztVyw/xke3uu2Ac3Z/spap8QDZZUvcDStYS/W3ONBafY52+z8sCqQ+cHfWEfAR7Xbg057KRHIr3BvO0K7K5ydGqimTuok6V6GvaRJbss48q4OXmytDn4AlVvYAnRz1msaVmFjCzMmtlraozuD+ZUDHGGtr295pKd5kr2YbulcJhsim9xp74wdFmTLagJ7vinLTClMD9cW8YynXZzJnHoisLYhBtqZeGjsSmkufKpkWIj80jxASicV+V6HMF2aTqFPNYu7a2ZYV8joFyu70qG+ucBTXTkfGCD/1zMxmMWndwYPg1hrfIHMm6SPGwjBUmm8pGaaRdpCfUSLhVdWprZVHZWs9ifg0Rk/qCCg/oMurHXtCGYRjPKvpy5apsfqQ3dxeEzEvBsu5B2XQWhEOVVl4a0my3Wq2aXoYRD7Kc52B36HbHvcY0liSbB+7GoHZfle1o8duGJulEubXsO/3nMEpdPzIi17BmyIeIMLlRujweNZl+R5FXWqTwLrhsrP+tRh/b0ZpSq0Kn3Y+VFFGbd4GkUi/knnshm0RfdRCPsBF11UlzbB3PuYEZQOBwA01KHpKNz2goZPkKpAMGcQBdh+hLRxMfuKgLHOIQT55kmzLpjn3N9LBsCyxp4KNaf7fBGepaZKLOk0dDhZuYZCu3OnRN5Ek2a4cuZCtY/7pMZdueBmDMZNufbFbZckOVneG+bH2z2+2ami+qrsqGasf2onRKwJeV2pUQZ9GlbBDr7svGI+ZJNmvVFYw6obJZPCmtiWas6rio7stWVNRpHpYNbouU7b0ssWUBAcKdJfVgKrgxPNhSt6rtskuNSbbpAi7baINhdVwbVLaNNSV6RUVl29zZnC+obPgifWSx7fJzs6dkq1U+qOeNZJNp4VLqRpNX08LqJFvpyM+XrT49ZEYGI5U9IxdzVw7tSbapzcagbT5HNn2SrXWqbmddJshT340hsxlGZlPg0TBGaja+ItvCkjQ6hA4ele0c23iM4K56p8szsk0z6VXZeiuaRE1qy5vm+siaRSfvKHSmiAtjmsvGAulTss0hPPMhPjcvZBugFmJaTLJZbOJIehbkTrJJwYVsjTEFaoQMLQLrLqJ+7BnUwBI7Dm1+psFTgNjBfhy8K7KFDp+pNhaVrdT5dBFWLIyVHk8VIB64LyEbe+Kp07PI1dpadB6LdSWjSSqY9CbrU1s2ikW6hQmeytbCjFPMn5YN7eCKznWTnGZkZ9kSIquD4ufn2CZ7TeaWMxhg/kk20NBYhmfZYK1Z7fhXhzSnOHksYxr4SlmW/GHQ6yGxqxVlkLQrspU6jDbFLAiLbWgF0+xxhAfDo/8GZpguc5PaLl4sm80G+Jyweb60ZCZbd+Bm9bzOApbM06RHZ31IQD1vD2kknDLhJ66fkS2bVZJKPMjJVfNONrSGIboNyKw/ySbrRHc0jU5dk2yQF8ledJbNjyrJ4KsIF8K8c/nGa2fcW4WO7GcHOq+3RIqkK7EtMiR9H5CIy2ZGnmRUurTXmGxuUEk6sUlleOYLZYsMbeMid20ZTb3DcuyBbAuH7PNuqdqnLYUtcYJTI4fKM3Q7gtUSW6IcYO2T08WVxiq0mGypH2WryqsqVV2DIJnkTPsUWW9XHolKj35lgwismuAEZOosqeSLKzQPbLJFikYXV/SSDXQwTrd+fy9hfX9TqWDLPqWxdd2p2hWh8w0srvglK/YCdxGw/jPssBzUz4O+X4fxFNXcI7NZX1NzsHdftg5rl7/nmkPbHyrbJrjPUhxA3tbJBBNib07+Om/bu9l4ES9zaHho+ZcJSZvOkdm2LaucnWvOD+MyZsc+FE5d+mk9pgqcoMOrbVNkHsY65YVl27IxabZpyApP36+2KY85ReXc++Q8bNvL/dxF27J6Q7GE1f7Qpj4zvDw1zr6aSEfoH6Xt5DvIZUPyNGrB5pHbDFXSy5mTtn7vt8vaR0m8rKEgSUN+Ml8W9/KWdwBbkq5/cv7DUGZXtl//Thhc98j3Et4gq27um+HWkLwf43G8Ayg6JpZWuS+u+QrMK9WBUKRp+F3zqzdFjPXK1h58WfTqhLDMAvDs7/czniHPf4QXLGWX592LP/YRCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBDfI/wNZwk0/r8qJNQAAAABJRU5ErkJggg=="
+				alt="Saner Logo" width="200" height="100" />
+		</div>
+	</div>
+	<div class="col-8 text-center" style="padding-top: 20px;">
+		<div class="h1 m-0">Manage Engine</div>
+	</div>
+
+	<div class="col-2 text-right" style="padding-top: 20px;">
+		<button class="dt-button" disabled>$3.5/year per endpoint</button>
+	</div>
+</div>
+
+<hr>
+<div class="contents" style="height: 250px;">
+	<h5 >About</h5>
+	
+	<p>
+		ManageEngine Vulnerability Manager Plus is an enterprise-level vulnerability management solution that helps organizations detect, assess, prioritize, and remediate vulnerabilities in their IT infrastructure. It provides comprehensive vulnerability scanning and management capabilities to protect critical business assets from cyber threats.
+	</p>
+</div>
+
+
+<hr>
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+			<div class="card-header">
+				<h5 class="card-title">❓Recomendations</h5>
+			</div>
+			<div class="card-body">
+				<ul>
+					<li>
+						ManageEngine Vulnerability Manager Plus is suitable for large organizations that require advanced vulnerability management capabilities.
+					</li>
+					<li>
+						Ideal for organizations that need to manage and secure a complex IT infrastructure with multiple endpoints, servers, web applications, and databases.
+					</li>
+					<li>
+						Organizations that prefer a cloud-based solution with a pay-as-you-go pricing model.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="card">
+			<div class="card-header">
+				<h5 class="card-title">Our Thoughts 🤔</h5>
+			</div>
+			<div class="card-body">
+				<ul>
+					<li>
+						ManageEngine Vulnerability Manager Plus is a vulnerability management solution that provides comprehensive visibility into the security posture of your IT environment
+					</li>
+					<li>
+						For small organization manage engine must be a complex solution for them because it is hard for begineers to configure the features available in VM+
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+<div class="row">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (1).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Another patch install successfully
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (3).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Changing proxy settings
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (4).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					No of assets
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (5).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Installing Agent
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (6).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Software vulnerabilities detected
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (7).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Installing patches for it
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (8).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Installing Patches on Asset
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (9).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Deployment settings
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (10).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Target defining
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (11).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Patch successfully deployed
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (12).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Forceful shutdown
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (2).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					VM+ Features
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (13).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Restart it
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body pb-4">
+				<img src="assets/img/screenshot/manage engine (14).png" alt="Saner" />
+				<div class="card-footer text-center pb-1">
+					Automatically Reboot system after patch installment
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

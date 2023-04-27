@@ -1,0 +1,233 @@
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Vulnerability Graph</h3>
+      </div>
+      <div class="card-body">
+        <div class="charts">
+          <apx-chart [series]="vuln_graph_options.series" [chart]="{type: 'line', background: 'transparent'}"
+            [xaxis]="{categories: vuln_graph_options.categories}" 
+            [theme]="{mode:'dark'}"
+            ></apx-chart>
+        </div>
+      </div>
+      <div class="card-footer pb-4">
+        This is a graph for the number of vulnerabilities found by each product.
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Severity Graph</h3>
+      </div>
+      <div class="card-body">
+        <div class="charts">
+          <apx-chart [series]="severity_graph_options.series" [chart]="{type: 'bar', background: 'transparent'}"
+            [xaxis]="{categories: severity_graph_options.categories}" [theme]="{mode:'dark'}"></apx-chart>
+        </div>
+      </div>
+      <div class="card-footer pb-4">
+        This is a graph for the number of vulnerabilities found by each product accourding to their severity.
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Price Graph</h3>
+      </div>
+      <div class="card-body">
+        <div class="charts">
+          <apx-chart [series]="price_graph_options.series" [chart]="{type: 'bar', background: 'transparent'}"
+            [xaxis]="{categories: price_graph_options.categories}" [colors]="chartOptions.colors"
+            [theme]="{mode:'dark'}"
+            ></apx-chart>
+        </div>
+      </div>
+      <div class="card-footer pb-4">
+        This is a price graph for the product. The prices are based on a number different plans and assumptions. These
+        details can be found on the right.
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Pricing Details</h3>
+      </div>
+
+      <div class="card-footer pb-4">
+        <ul>
+          <li><b>SanerNow</b>: The plans are based on the number of endpoints to be managed. The Standard plan starts at
+            $2.5 per endpoint per year.</li>
+          <li><b>Intruder</b>: Intruder offers a range of plans based on the number of assets to be scanned.
+            The Essentials plan starts at $80 per month for up to 10 assets.</li>
+          <li><b>ManageEngine Vulnerability Manager Plus</b>: A company would need to purchase the Professional plan for
+            up to 250 endpoints, which costs $795 per year.</li>
+          <li><b>Nessus</b>: A company would need to purchase the Nessus Professional plan for up to 128 IPs, which
+            costs $2,190 per year. (Not limited to the number of assets)</li>
+          <li><b>Qualys</b>: A company would need to purchase the Express plan for up to 100 assets, which costs $1,995
+            per year.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card text-center">
+      <div class="card-header">
+        <h3 class="card-title">Compliances Supported</h3>
+      </div>
+      <div class="card-body">
+        <div class="charts">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Tool Name</th>
+                <th>HIPAA</th>
+                <th>PCI DSS</th>
+                <th>GDPR</th>
+                <th>ISO 27001</th>
+                <th>CIS Controls</th>
+                <th>NIST SP 800-53</th>
+                <th>NIST CSF</th>
+                <th>COBIT 2019</th>
+                <th>SOC 2</th>
+                <th>FISMA</th>
+                <th>HIPAA-HITECH</th>
+                <th>FedRAMP</th>
+                <th>CCPA</th>
+                <th>HITRUST CSF</th>
+                <th>SWIFT CSP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ManageEngine</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Nessus</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>SanerNow</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Intruder.io</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Qualys</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer pb-4">
+        This is a table of all the compliances supported by each of the tools.
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Reviews</h3>
+      </div>
+      <div class="card-body">
+        <div class="charts">
+          <apx-chart [series]="review_graph_options.series" [chart]="{type: 'line', background: 'transparent'}"
+            [xaxis]="{categories: review_graph_options.categories}" [theme]="{mode:'dark'}"></apx-chart>
+        </div>
+      </div>
+      <div class="card-footer pb-4">
+        This is our review for each of the products we have tested.
+      </div>
+    </div>
+  </div>
+</div>

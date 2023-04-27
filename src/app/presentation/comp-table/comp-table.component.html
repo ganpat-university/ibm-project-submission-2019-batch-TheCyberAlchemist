@@ -1,0 +1,26 @@
+<!-- checkbox for all the apps -->
+<div class="checkbox" *ngFor="let app of all_apps">
+  <label>
+	<input type="checkbox" (change)="selectApps($event,app)" [checked]="0">
+	{{app}}
+  </label>
+</div>
+
+<table id="table">
+	<thead>
+	  <tr>
+		<th *ngFor="let header of selected_apps">{{header}}</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr *ngFor="let row of table_data">
+		
+		<td *ngFor="let header of selected_apps">
+			<div [innerHTML]="row[header] || 'N/A'">
+				{{row[header] || 'N/A' }}
+			</div>
+		</td>
+	  </tr>
+	</tbody>
+  </table>
+  

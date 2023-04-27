@@ -1,0 +1,45 @@
+.charts{
+	width: 100%;
+}
+@import "../../../assets/scss/paper-dashboard/variables";
+
+/* Style the table */
+#table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	align-items: center;
+	border: 1px solid $orange-color;
+	padding-left: 2px;
+	
+	th {
+		text-align: left;
+		padding: 10px;
+	}
+
+	/* Style the table rows */
+	tr {
+		border-bottom: 1px solid $orange-color;
+	}
+
+	/* Style the first column */
+	td:first-child {
+		font-weight: bold;
+		padding: 10px;
+	}
+	// give border to the all the cells
+	td,th {
+		border: 1px solid rgba(233, 223, 223, 0.2);
+		padding: 10px;
+	}
+}
+li{
+	margin-top: 10px;
+}
+.apexcharts-svg {
+	background-color: transparent !important;
+	background: rgba(0, 0, 0, 0) !important;
+
+  }

@@ -1,0 +1,74 @@
+// @use '@angular/material' as mat
+// $my_orange: (50 : #feece6,100 : #fdd0c2,200 : #fcb199,300 : #fb9270,400 : #fa7a51,500 : #f96332,600 : #f85b2d,700 : #f75126,800 : #f6471f,900 : #f53513,A100 : #ffffff,A200 : #fff2f0,A400 : #ffc5bd,A700 : #ffafa3,contrast: (50 : #000000,100 : #000000,200 : #000000,300 : #000000,400 : #000000,500 : #000000,600 : #000000,700 : #ffffff,800 : #ffffff,900 : #ffffff,A100 : #000000,A200 : #000000,A400 : #000000,A700 : #000000,))
+:root {
+    color-scheme: dark;
+  }
+$my_orange: (
+    50 : #feece6,
+    100 : #fdd0c2,
+    200 : #fcb199,
+    300 : #fb9270,
+    400 : #fa7a51,
+    500 : #f96332,
+    600 : #f85b2d,
+    700 : #f75126,
+    800 : #f6471f,
+    900 : #f53513,
+    A100 : #ffffff,
+    A200 : #fff2f0,
+    A400 : #ffc5bd,
+    A700 : #ffafa3,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$sg-app-primary: mat-palette($my_orange,A100);
+$sg-app-accent:  mat-palette($my_orange,300);
+
+$sg-app-theme: mat-light-theme($sg-app-primary, $sg-app-accent);
+
+@function my-mat-light-theme-foreground($color) {
+    @return (
+        base:              $color,
+        divider:           $white-12-opacity,
+        dividers:          $white-12-opacity,
+        disabled:          rgba($color, 0.38),
+        disabled-button:   rgba($color, 0.38),
+        disabled-text:     rgba($color, 0.38),
+        hint-text:         rgba($color, 0.38),
+        secondary-text:    rgba($color, 0.54),
+        icon:              rgba($color, 0.54),
+        icons:             rgba($color, 0.54),
+        text:              rgba($color, 0.87),
+        slider-off:        rgba($color, 0.26),
+        slider-off-active: rgba($color, 0.38),
+        slider-min:        rgba($color, 0.38)
+    );
+};
+
+$white-foreground: my-mat-light-theme-foreground(white);
+$my-app-theme-custom: map-merge($sg-app-theme, (foreground: $white-foreground));
+
+@include angular-material-theme($my-app-theme-custom);
+// @include angular-material-theme($my-app-theme-custom);
+
+@import "node_modules/bootstrap/scss/bootstrap"; 
+$body-bg: #fff;
+$body-color: #111;
