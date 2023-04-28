@@ -113,53 +113,18 @@ export class GraphsComponent implements OnInit {
     chart_type:'line',
     categories: ['SanerNow','Intruder','ManageEngine','Nessus Pro', 'Qualys'],
   };
-  heatmap_graph_options = {
-    series: [{
-      name: 'Metric1',
-      // set data to array of numbers below 100
-      data : [90, 23, 45, 56, 78, 89, 90, 61],
-      color: '#008FFB'
-    },{
-      name: 'Metric2',
-      data : [24, 56, 78, 90, 23, 45, 67, 89],
-      color: '#008FFB'
-    }],
-    plotOptions: {
-      heatmap: {
-        // shadeIntensity: 0.5,
-        radius: 0,
-        useFillColorAsStroke: true,
-        colorScale: {
-          ranges: [
-            // {
-            //   from: -30,
-            //   to: 5,
-            //   name: 'low',
-            //   color: '#00A100'
-            // },
-            // {
-            //   from: 6,
-            //   to: 20,
-            //   name: 'medium',
-            //   color: '#128FD9'
-            // },
-            {
-              from: 0,
-              to: 100,
-              name: 'high',
-              color: '#FFB200'
-            },
-            // {
-            //   from: 50,
-            //   to: 100,
-            //   // name: 'extreme',
-            //   color: '#FF0000'
-            // }
-          ]
-        }
+  timetaken_graph_options = {
+    series:[
+      {
+        name: 'Minutes',
+        data: [ 10, 240, 10, 20, 10],
+        color: '#f8ac59'
       }
-    },
-  }
+    ],
+    chart_type:'line',
+    categories: ['SanerNow','Intruder','ManageEngine','Nessus Pro', 'Qualys'],
+  };
+
   ngOnInit(): void {
     // const chart = new ApexCharts(document.getElementById('chart'), this.chartOptions);
     // chart.updateSeries(this.chartData);

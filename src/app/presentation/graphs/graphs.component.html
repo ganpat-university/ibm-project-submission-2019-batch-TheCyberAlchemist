@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="card-footer pb-4">
-        This is a graph for the number of vulnerabilities found by each product.
+        A graph for the number of vulnerabilities found by each product.
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="card-footer pb-4">
-        This is a graph for the number of vulnerabilities found by each product accourding to their severity.
+        A graph for the number of vulnerabilities found by each product accourding to their severity.
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="card-footer pb-4">
-        This is a price graph for the product. The prices are based on a number different plans and assumptions. These
+        A price graph for the product. The prices are based on a number different plans and assumptions. These
         details can be found on the right.
       </div>
     </div>
@@ -205,7 +205,7 @@
         </div>
       </div>
       <div class="card-footer pb-4">
-        This is a table of all the compliances supported by each of the tools.
+        A table of all the compliances supported by each of the tools.
       </div>
     </div>
   </div>
@@ -217,16 +217,32 @@
   <div class="col-6">
     <div class="card">
       <div class="card-header">
+        <h3 class="card-title">Scan Times</h3>
+      </div>
+      <div class="card-body">
+        <div class="charts">
+          <apx-chart [series]="timetaken_graph_options.series" [chart]="{type: 'line', background: 'transparent'}"
+            [xaxis]="{categories: timetaken_graph_options.categories}" [theme]="{mode:'dark'}"></apx-chart>
+        </div>
+      </div>
+      <div class="card-footer pb-4">
+        A graph of the time taken to complete each of the scans.
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
         <h3 class="card-title">Reviews</h3>
       </div>
       <div class="card-body">
         <div class="charts">
-          <apx-chart [series]="review_graph_options.series" [chart]="{type: 'line', background: 'transparent'}"
+          <apx-chart [series]="review_graph_options.series" [chart]="{type: 'bar', background: 'transparent'}"
             [xaxis]="{categories: review_graph_options.categories}" [theme]="{mode:'dark'}"></apx-chart>
         </div>
       </div>
       <div class="card-footer pb-4">
-        This is our review for each of the products we have tested.
+        Our review for each of the products we have tested.
       </div>
     </div>
   </div>

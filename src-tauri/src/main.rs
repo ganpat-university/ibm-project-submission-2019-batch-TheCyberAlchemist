@@ -2,9 +2,7 @@
     all(not(debug_assertions), target_os = "windows"),
     windows_subsystem = "windows"
 )]
-use futures::executor::block_on;
 
-use serde::{Serialize, Deserialize};
 
 fn main() {
     // println!("here");
